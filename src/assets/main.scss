@@ -1,0 +1,12 @@
+@import "../assets/variables/variables", "../assets/mixins/mixins";
+* {
+  margin:0;
+  height:100%;
+  padding:0;
+}
+#app {
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  grid-column-gap: 5rem;
+  background-color:$background;
+}
