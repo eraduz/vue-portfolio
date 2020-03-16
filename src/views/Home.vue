@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <service />
+    <git />
   </div>
 </template>
 <script>
-import Service from '../components/Service'
+import Git from '../components/Git'
 export default {
   components: {
-    Service
+    Git
   }
 }
 </script>
