@@ -1,0 +1,14 @@
+@import "../assets/variables/variables", "../assets/mixins/mixins";
+
+.disqus_section {
+  color: $text;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  margin-bottom: 50px;
+  .title {
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 0.7em;
+  }
+}

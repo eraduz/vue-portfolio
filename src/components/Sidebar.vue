@@ -1,8 +1,8 @@
 <template>
   <div class="sidebar">
     <section class="details">
-      <img class="details_logo" src="../assets/logo.png" alt="image, logo" />
-      <span class="details_name">John Doe</span>
+      <img class="details_logo" :src="repositories.data.avatar_url" alt="image, logo" />
+      <a :href="repositories.data.html_url" target="_blank" class="details_name">Reda Eradus</a>
     </section>
     <section class="nav">
       <ul>
@@ -33,12 +33,39 @@
       </ul>
     </section>
     <section class="socials">
-      <span onclick="window.open('https://linkedin.com/in/eraduz', '_blank')"  class="iconify" data-icon="brandico:linkedin" data-inline="false"></span>
-      <span onclick="window.open('https://github.com/eraduz', '_blank')" class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span>
+      <span
+        onclick="window.open('https://linkedin.com/in/eraduz', '_blank')"
+        class="iconify"
+        data-icon="brandico:linkedin"
+        data-inline="false"
+      ></span>
+      <span
+        onclick="window.open('https://github.com/eraduz', '_blank')"
+        class="iconify"
+        data-icon="ant-design:github-filled"
+        data-inline="false"
+      ></span>
     </section>
   </div>
 </template>
+<script>
+import axios from 'axios'
 
+export default {
+  data () {
+    return {
+      repositories: null
+    }
+  },
+
+  mounted () {
+    axios
+      .get('https://api.github.com/users/eraduz')
+      .then(response => (this.repositories = response))
+      .catch(error => console.log(error))
+  }
+}
+</script>
 <style lang="scss" scoped>
 @import "../assets/sidebar.scss";
 </style>
