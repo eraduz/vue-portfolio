@@ -67,5 +67,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "../assets/sidebar.scss";
+@import "@/assets/styles/sidebar.scss";
 </style>

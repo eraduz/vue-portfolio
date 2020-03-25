@@ -24,9 +24,6 @@
     </section>
   </section>
 </template>
-<style lang="scss" scoped>
-@import "../assets/git.scss";
-</style>
 <script>
 import axios from 'axios'
 
@@ -49,3 +46,6 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+@import "@/assets/styles/git.scss";
+</style>

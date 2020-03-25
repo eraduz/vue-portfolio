@@ -7,7 +7,7 @@
   </section>
 </template>
 <style lang='scss' scoped>
-@import '../assets/disqus.scss';
+@import '@/assets/styles/disqus.scss';
 </style>
 <script>
 export default {
