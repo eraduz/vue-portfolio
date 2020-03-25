@@ -4,9 +4,8 @@
       <span class="iconify" data-icon="jam:write" data-inline="false"></span>Blog
     </section>
     <section class="blogposts">
-      <!-- {{ console.log(posts) }} -->
-      <section class="post" v-for="post in posts.blog" :key="post.blog.id">
-        <span>{{post.id}}</span>
+      <section class="post" v-for="post in posts.blog" :key="post">
+
         </section>
       </section>
     </section>
@@ -19,9 +18,8 @@ import posts from '../assets/data/blogs.json'
 export default {
   data () {
     return {
-      posts: Object
+      posts: posts
     }
-  },
-  ...console.log(posts.blog)
+  }
 }
 </script>

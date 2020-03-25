@@ -4,20 +4,22 @@
             "id": "first-ever-post",
             "date": "March 25, 2020",
             "title": "My first ever post!",
-            "description": "First ever post"
+            "description": "First ever post",
+            "thumbnail": ""
         },
         {
             "id": "test-post-2",
             "date": "March 25, 2020",
             "title": "2!",
-            "description": "2"
+            "description": "2",
+            "thumbnail": ""
         },
         {
             "id": "test-post-3",
             "date": "March 25, 2020",
             "title": "3!",
-            "description": "3"
+            "description": "3",
+            "thumbnail": ""
         }
-
     ]
 }
