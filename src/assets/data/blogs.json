@@ -1,10 +1,23 @@
 {
-    "stories": [
+    "blog": [
         {
-            "id": "vue-markdown-blog",
-            "date": "March 10, 2019",
-            "title": "Creating a Simple Blog using Vue + Markdown",
-            "description": "Simple and neat way to add a blogging feature to add on your website."
+            "id": "first-ever-post",
+            "date": "March 25, 2020",
+            "title": "My first ever post!",
+            "description": "First ever post"
+        },
+        {
+            "id": "test-post-2",
+            "date": "March 25, 2020",
+            "title": "2!",
+            "description": "2"
+        },
+        {
+            "id": "test-post-3",
+            "date": "March 25, 2020",
+            "title": "3!",
+            "description": "3"
         }
+
     ]
 }

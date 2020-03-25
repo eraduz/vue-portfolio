@@ -5,7 +5,7 @@ import BlogEntries from '@/assets/data/blogs.json'
 Vue.use(VueRouter)
 
 const blogRoutes = Object.keys(BlogEntries).map(section => {
-  const children = BlogEntries.stories.map((child: { id: any }) => ({
+  const children = BlogEntries.blog.map((child: { id: any }) => ({
     path: child.id,
     name: child.id,
     component: () => import(`@/markdowns/${section}/${child.id}.md`)

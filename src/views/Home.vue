@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <git />
-    <disqus />
+    <blog />
   </div>
 </template>
 <script>
-import Git from '../components/Git'
-import Disqus from '../components/Disqus'
+import Git from '@/components/Git'
+import Blog from '@/components/Blog'
 
 export default {
   components: {
     Git,
-    Disqus
+    Blog
   }
 }
 </script>
