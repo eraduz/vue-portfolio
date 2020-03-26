@@ -1,25 +1,28 @@
 {
     "blog": [
         {
-            "id": "first-ever-post",
-            "date": "March 25, 2020",
+            "id": 1,
+            "url": "first-ever-post",
+            "date": "09/09/1983",
             "title": "My first ever post!",
-            "description": "First ever post",
-            "thumbnail": ""
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies metus aliquet diam vehicula bibendum. Nulla quis viverra nisl, at condimentum felis. ",
+            "thumbnail": "about_image.jpg"
         },
         {
-            "id": "test-post-2",
-            "date": "March 25, 2020",
+            "id": 2,
+            "url": "test-post-2",
+            "date": "26/03/2020",
             "title": "2!",
-            "description": "2",
-            "thumbnail": ""
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies metus aliquet diam vehicula bibendum. Nulla quis viverra nisl, at condimentum felis. ",
+            "thumbnail": "about_image.jpg"
         },
         {
-            "id": "test-post-3",
-            "date": "March 25, 2020",
+            "id": 3,
+            "url": "test-post-3",
+            "date": "26/03/2020",
             "title": "3!",
-            "description": "3",
-            "thumbnail": ""
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies metus aliquet diam vehicula bibendum. Nulla quis viverra nisl, at condimentum felis. ",
+            "thumbnail": "about_image.jpg"
         }
     ]
 }

@@ -14,15 +14,9 @@
   .blogposts {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    @include breakpoint(md) {
-      grid-template-columns: repeat(2, max-content);
-    }
-    @include breakpoint(lg) {
-      grid-template-columns: repeat(3, max-content);
-    }
+    grid-template-rows: repeat(max-content, 1fr);
     .post {
-      width: 400px;
+      width: calc(2 * 440px - 1px);
       height: 150px;
       background-color: $backgroundSecondary;
       border-radius: 4px;
@@ -32,10 +26,15 @@
       display: grid;
       border: .5px solid transparent;
       grid-template-rows: 1fr 2fr 1fr;
+      grid-template-columns: 3fr 1fr;
       &:hover {
         border: .5px solid $primary;
       }
-      a {
+      .description {
+        grid-column: 1;
+      }
+      .blogtitle {
+        font-size:20px;
         text-decoration: none;
         color: $text;
         width: max-content;
@@ -46,9 +45,8 @@
       }
       .footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         align-content: end;
-
+        grid-column: 1;
         .footer-item {
           display: grid;
           grid-template-columns: repeat(2, max-content);
@@ -56,9 +54,6 @@
           i {
             color: $secondary;
           }
-        }
-        .starred {
-          justify-self: end;
         }
       }
     }

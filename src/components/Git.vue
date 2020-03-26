@@ -6,6 +6,7 @@
     <section class="repositories">
       <section class="repository" v-for="repository in repositories" :key="repository.id">
         <a
+          class="repotitle"
           :href="'https://github.com/eraduz/' + repository.name"
           target="_blank"
         >{{repository.name}}</a>
@@ -34,8 +35,14 @@ export default {
     }
   },
   mounted () {
-    axios
-      .get('https://api.github.com/users/eraduz/repos')
+    axios({
+      method: 'get',
+      url: 'https://api.github.com/users/eraduz/repos',
+      headers: {
+        Authorization: 'Bearer 9688d30a6d6c1cf24ae1b0eab704302d76a3127d',
+        'Content-Type': 'application/json'
+      }
+    })
       .then(
         response =>
           (this.repositories = response.data.filter(

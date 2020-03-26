@@ -5,10 +5,10 @@ import BlogEntries from '@/assets/data/blogs.json'
 Vue.use(VueRouter)
 
 const blogRoutes = Object.keys(BlogEntries).map(section => {
-  const children = BlogEntries.blog.map((child: { id: any }) => ({
-    path: child.id,
-    name: child.id,
-    component: () => import(`@/markdowns/${section}/${child.id}.md`)
+  const children = BlogEntries.blog.map((child: { url: any }) => ({
+    path: child.url,
+    name: child.url,
+    component: () => import(`@/markdowns/${section}/${child.url}.md`)
   }))
   return {
     path: `/${section}`,
@@ -22,12 +22,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/Home.vue')
+    component: () => import('@/views/Home.vue')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: () => import('@/views/About.vue')
   },
   ...blogRoutes
 ]
