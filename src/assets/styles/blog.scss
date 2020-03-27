@@ -24,29 +24,31 @@
       margin: 50px 50px 0 0;
       padding: 15px;
       display: grid;
-      border: .5px solid transparent;
-      grid-template-rows: 1fr 2fr 1fr;
+      grid-column-gap: 2rem;
+      border: 0.5px solid transparent;
+      // grid-template-rows: 1fr 2fr 1fr;
       grid-template-columns: 3fr 1fr;
       &:hover {
-        border: .5px solid $primary;
+        border: 0.5px solid $primary;
       }
-      .description {
-        grid-column: 1;
+      .info {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
       }
       .blogtitle {
-        font-size:20px;
+        font-size: 20px;
         text-decoration: none;
         color: $text;
         width: max-content;
-        height:max-content;
+        height: max-content;
         &:hover {
-          color:$secondary;
+          color: $secondary;
         }
       }
+
       .footer {
         display: grid;
         align-content: end;
-        grid-column: 1;
         .footer-item {
           display: grid;
           grid-template-columns: repeat(2, max-content);
