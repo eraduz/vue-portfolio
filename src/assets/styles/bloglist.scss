@@ -1,6 +1,6 @@
 @import "../assets/variables/variables", "../assets/mixins/mixins";
 
-.blog_section {
+.container {
   color: $text;
   display: grid;
   grid-template-rows: repeat(2, max-content);

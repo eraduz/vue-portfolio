@@ -1,8 +1,8 @@
 <template>
   <div class="sidebar">
     <section class="details">
-      <img class="details_logo" :src="repositories.data.avatar_url" alt="image, logo" />
-      <a :href="repositories.data.html_url" target="_blank" class="details_name">Reda Eradus</a>
+      <img class="details_logo" :src="response.avatar_url" alt="image, logo" />
+      <a :href="response.html_url" target="_blank" class="details_name">Reda Eradus</a>
     </section>
     <section class="nav">
       <ul>
@@ -54,15 +54,18 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      repositories: null
+      response: Object
     }
   },
-
   mounted () {
     axios
       .get('https://api.github.com/users/eraduz')
-      .then(response => (this.repositories = response))
-      .catch(error => console.log(error))
+      .then(response => {
+        this.response = response.data
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 }
 </script>

@@ -1,0 +1,42 @@
+@import "../assets/variables/variables", "../assets/mixins/mixins";
+
+.blog {
+    color:$text;
+    width: max-content;
+    height: max-content;
+    grid-template-rows: repeat(3,1fr);
+    .back {
+        text-decoration: none;
+        color:$text;
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+        grid-column-gap: 1rem;
+        align-items: center;
+        height: max-content;
+        width: max-content;
+        &:hover {
+            color:$secondary;
+        }
+    }
+    .top {
+        grid-template-rows: repeat(3,max-content);
+        margin: 2rem 0;
+        .thumbnail_image {
+            width: auto;
+            height: 200px;
+            margin: 2rem 0;
+        }
+        .title {
+            font-weight: 200;
+            font-size: 32px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(2,max-content);
+            grid-column-gap: .75rem;
+            color:$inactiveText;
+            align-items: center;
+            column-gap: .75rem;
+        }
+    }
+}

@@ -17,7 +17,9 @@
             </section>
           </section>
         </section>
-        <img :src="require('@/assets/images/' + post.thumbnail)" alt="thumbnail" class="thumbnail" />
+      <router-link class="thumbnail" :to="`/blog/${post.url}`" exact>
+      <img :src="require('@/assets/images/' + post.thumbnail)" alt="thumbnail" class="thumbnail_image" />
+      </router-link>
       </section>
     </section>
   </section>
@@ -39,7 +41,7 @@ export default {
   methods: {
     filterPost () {
       return this.posts.blog.filter(
-        post => moment(post.date, 'DDMMYYYY hh:mm').fromNow().slice(3) === 'hours ago'
+        post => post.isNew === true
       )
     }
   }
