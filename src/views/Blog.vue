@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="blog_section">
     <section class="title">
       <span class="iconify" data-icon="jam:write" data-inline="false"></span>Blog
     </section>
@@ -25,7 +25,7 @@
   </section>
 </template>
 <style lang="scss">
-@import "@/assets/styles/bloglist.scss";
+@import "@/assets/styles/blog.scss";
 </style>
 <script>
 import posts from '@/assets/data/blogs.json'

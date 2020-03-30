@@ -12,19 +12,19 @@
         {
             "id": 2,
             "url": "test-post-2",
-            "date": "22/03/1992",
-            "title": "aaaaaaaaa!",
-            "description": "Lorem ipsum dolor sit ametametametamet, consectetur adipiscing elit. Phasellus ultricies metus aliquet diam vehicula bibendum. Nulla quis viverra nisl, at condimentum felis. ",
-            "thumbnail": "about_image.jpg",
+            "date": "01/01/0000",
+            "title": "Test message",
+            "description": ":D",
+            "thumbnail": "image2.jpg",
             "isNew": false
         },
         {
             "id": 3,
             "url": "test-post-3",
-            "date": "26/03/2020",
-            "title": "3!",
+            "date": "01/01/9999",
+            "title": "oooooooooOAAAAAAAooooooooooAA",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies metus aliquet diam vehicula bibendum. Nulla quis viverra nisl, at condimentum felis. ",
-            "thumbnail": "about_image.jpg",
+            "thumbnail": "image3.jpg",
             "isNew": false
         }
     ]
