@@ -2,9 +2,27 @@
     "skills": [
         {
             "id": 1,
-            "language": "Sass",
-            "description": "I love SCSS for it's simplicity and non verbosity",
-            "thumbnail": "sass.png"
+            "language": "Python",
+            "description": "Lorem",
+            "thumbnail": "python.png"
+        },
+        {
+            "id": 2,
+            "language": "Vue.js",
+            "description": "Lorem",
+            "thumbnail": "vue.png"
+        },
+        {
+            "id": 3,
+            "language": "Angular",
+            "description": "Lorem",
+            "thumbnail": "angular.png"
+        },
+        {
+            "id": 4,
+            "language": "PHP",
+            "description": "Lorem",
+            "thumbnail": "php.png"
         }
     ]
 }
