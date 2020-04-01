@@ -1,0 +1,10 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "language": "Sass",
+            "description": "I love SCSS for it's simplicity and non verbosity",
+            "thumbnail": "sass.png"
+        }
+    ]
+}
